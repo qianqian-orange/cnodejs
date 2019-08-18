@@ -1,0 +1,50 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "env": {
+      "browser": true,
+      "commonjs": true,
+      "es6": true,
+      "node": true
+  },
+  "parserOptions": {
+      "ecmaVersion": 6,
+    "sourceType": "module",
+      "ecmaFeatures": {
+          "jsx": true
+      }
+  },
+  "plugins": [
+      "react"
+  ],
+  "rules": {
+    "quotes": [1, "single"],
+    "indent": [1, 2],
+    "semi": [1, "never"],
+    "eol-last": 0,
+    "no-console": 0,
+    "no-debugger": 0,
+    "no-unused-vars": 1,
+    "no-multiple-empty-lines":1,
+    "arrow-body-style": 1,
+    "space-before-function-paren": [1, {
+      "anonymous": "always",
+      "named": "never",
+      "asyncArrow": "always"
+    }],
+    "comma-dangle": 0,
+    "react/jsx-filename-extension": [1, {
+      "extensions": [".js", ".jsx"]
+    }],
+    "react/jsx-tag-spacing": [1, {
+      "beforeSelfClosing": "allow"
+    }],
+    "react/jsx-indent": [1, 2],
+    "react/prefer-stateless-function": 1,
+    "react/prop-types": 1,
+    "react/forbid-prop-types": 0,
+    "import/no-unresolved": 0,
+    "react/no-unused-prop-types": 1,
+    "class-methods-use-this": 1
+  }
+}

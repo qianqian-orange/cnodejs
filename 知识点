@@ -1,0 +1,8 @@
+坑：
+1.如果react-router-dom的版本不超过4.3.1，那么如果有组件继承PureComponent且render方法中Link标签，那么此组件要用withRouter包裹，不然会造成Link标签失效。
+2.当组件被mobx注入属性后， 在Link标签中要使用render的方式调用此组件，而不能使用component,因为component要求传入一个函数，而组件被注入属性后会成为一个对象
+3. react-async-bootstrapper只适用于类组件，函数组件无效，版本为2.2.1
+4. 文本使用属性
+- word-break: 'break-word' 作用是一句话过长时会自动换行
+- white-space: 'nowrap' 作用指定不换行， 'pre-wrap': 作用是每一句话都换行
+- text-overflow: 'eclipse' 配合overflow: hidden， 可以达到将多余语句转换成省略号
