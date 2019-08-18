@@ -7,6 +7,8 @@ import { TopicPool, User } from './store'
 
 const initialState = window.__INITIAL__STATE__ || {} // eslint-disable-line
 
+console.log(1)
+
 const Main = () => {
   useEffect(() => {
     const jssStyles = document.querySelector('#jss-server-side')
